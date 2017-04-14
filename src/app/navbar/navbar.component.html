@@ -1,16 +1,21 @@
 <header>
-  <nav class="navbar navbar-default">
-    <div class="container">
+  <nav class="navbar navbar-default navbar-collapse">
+    <div class="container-fluid">
       <div class="navbar-header">
-        <span class='navbar-brand'>Demo Apps</span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
       </div>
-      <div  class="navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
           <li routerLinkActive="active">
-            <a routerLink="/gsearch" routerLinkActive="active">Search Git</a>
-        </li>
+            <a routerLink="/gsearch" routerLinkActive="active">Search</a>
+          </li>
           <li routerLinkActive="active">
-            <a routerLink="/spotify" >SpotifyApp</a>
+            <a routerLink="/spotify">SpotifyApp</a>
           </li>
         </ul>
       </div>

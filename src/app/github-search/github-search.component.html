@@ -6,9 +6,11 @@
         <input class="form-control" type="text" [(ngModel)]="username"><br>
         <button class="btn btn-info" (click)="getName(username)">GetName</button>
         <div class="row">
+
           <div class="col-xs-12" *ngFor="let item of data">
             <div class="col-md-3">
-              <img src="{{item.avatar_url}}" alt="" class="img-circle">
+              <img src="{{item.avatar_url}}" alt="" class="img-responsive">
+              <button class="btn btn-default"></button>
             </div>
           </div>
         </div>
