@@ -5,16 +5,30 @@
         <label>Profile</label> <br><br>
         <input class="form-control" type="text" [(ngModel)]="username"><br>
         <button class="btn btn-info" (click)="getName(username)">GetName</button>
-        <div class="row">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form">
 
-          <div class="col-xs-12" *ngFor="let item of data">
-            <div class="col-md-3">
-              <img src="{{item.avatar_url}}" alt="" class="img-responsive">
-              <button class="btn btn-default"></button>
-            </div>
-          </div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-4" *ngFor="let item of data">
+    <div class="card">
+      <div class="cover">
+      </div>
+      <div class="user">
+       <img  class="img-responsive" src="{{item.avatar_url}}" alt="">
+      </div>
+      <div class="content">
+        <div class="main text-center">
+          <h4>{{item.name}}</h4>
+          <p class="profession">{{item.location}}</p>
+          <p class="text-center">"General info"</p>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>

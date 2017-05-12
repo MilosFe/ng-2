@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpotifyAppComponent } from './spotify-app.component';
+import { AlbumsComponent } from './albums.component';
 
-describe('SpotifyAppComponent', () => {
-  let component: SpotifyAppComponent;
-  let fixture: ComponentFixture<SpotifyAppComponent>;
+describe('AlbumsComponent', () => {
+  let component: AlbumsComponent;
+  let fixture: ComponentFixture<AlbumsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpotifyAppComponent ]
+      declarations: [ AlbumsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpotifyAppComponent);
+    fixture = TestBed.createComponent(AlbumsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

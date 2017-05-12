@@ -1,0 +1,41 @@
+.card-container {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  margin-bottom: 30px;
+}
+.card {
+  margin-bottom: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+.card .cover {
+  height: 105px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  background: url(http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg) center center;
+  background-size: cover;
+}
+
+
+.card .user {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  img {
+    margin: -55px auto;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    border: 5px solid white;
+    position: relative;
+    background: white;
+  }
+}
+
+.content {
+  display: block;
+  margin-top: 60px;
+}
+

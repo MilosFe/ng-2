@@ -16,13 +16,18 @@ export class SpotifyAppComponent implements OnInit {
 
   searchMusic(query: string):void{
 
-     this.spotifyService.searchByTrack(query)
-       .subscribe( res => {
+     this.spotifyService.searchByArtists(query)
+       .subscribe((res:any) => {
        this.artist = res.artists.items;
+       console.log(res);
        });
   };
   ngOnInit() {
-
+    this.spotifyService.searchByArtists("aerosmith")
+      .subscribe( (res:any) => {
+        this.artist = res.artists.items;
+        console.log(res);
+      });
   }
 
 }

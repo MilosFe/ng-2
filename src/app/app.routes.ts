@@ -1,5 +1,6 @@
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { SpotifyAppComponent } from './spotify-app/spotify-app.component';
+import { AlbumsComponent } from './spotify-app/albums/albums.component';
 
 export const Routes = [
   {
@@ -15,6 +16,10 @@ export const Routes = [
     path: 'spotify',
     component: SpotifyAppComponent
   },
+  {
+    path: 'spotify/albums/:id',
+    component: AlbumsComponent
+  }
 ]
 
 

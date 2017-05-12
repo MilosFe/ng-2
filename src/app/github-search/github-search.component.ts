@@ -10,15 +10,17 @@ import { User }from "./user";
 export class GithubSearchComponent implements OnInit {
    log = {item:"Milos"};
    data = [];
+   color:"red";
    username:any;
 
   constructor(private gitService: GithubSearchService) { }
 
-  getName(username: User): void{
+  getName(username): void{
     this.data = [];
-     this.gitService.getUser(username).then(data=>{ this.data.push(data) ;} );
+     this.gitService.getUser(username).then(data=>{ this.data.push(data) ; console.log(this.data)} );
   }
   ngOnInit() {
+    this.getName("tensazangetsu");
   }
 
 }

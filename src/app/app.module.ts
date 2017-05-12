@@ -11,13 +11,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { Routes } from "./app.routes";
 import { SpotifyAppComponent } from './spotify-app/spotify-app.component';
+import { AlbumsComponent } from './spotify-app/albums/albums.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubSearchComponent,
     NavbarComponent,
-    SpotifyAppComponent
+    SpotifyAppComponent,
+    AlbumsComponent
   ],
   imports: [
     BrowserModule,
